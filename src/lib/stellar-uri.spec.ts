@@ -1,6 +1,6 @@
 // tslint:disable:no-expression-statement no-object-mutation
 import ava, { TestInterface } from 'ava';
-import { Keypair, StellarTomlResolver } from 'stellar-sdk';
+import { Keypair, StellarTomlResolver } from '@lantah/lantah-sdk';
 import { StellarUri as StellarUriBase } from './stellar-uri';
 
 import sinon from 'sinon';
@@ -69,7 +69,7 @@ test.serial('isPublicNetwork/usePublicNetwork', t => {
   t.true(uri.isPublicNetwork);
   uri.usePublicNetwork();
   t.true(uri.isPublicNetwork);
-  t.is(uri.networkPassphrase, 'Public Global Stellar Network ; September 2015');
+  t.is(uri.networkPassphrase, 'Public Global Lantah Network ; 2023');
 });
 
 test.serial('allows setting callback with or without "web:" prefix', t => {

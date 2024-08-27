@@ -1,4 +1,4 @@
-import { Keypair, Networks, StellarTomlResolver } from 'stellar-sdk';
+import { Keypair, Networks, StellarTomlResolver } from '@lantah/lantah-sdk';
 
 import { Replacement, ReplacementsParser } from './replacement';
 
